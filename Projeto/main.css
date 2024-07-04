@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Wittgenstein", serif;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container-titulo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1024px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+    
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    justify-content: center;
+    
+}
+
+.container-subtitulo {
+    display: flex;
+    margin-right: 5%;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+header {
+    background-color: #05446e;
+    color: #fff;
+    padding: 2px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+h1 {
+    font-size: 40px;
+}
+
+.container-imobiliaria h2 {
+    margin-top: 2%;
+}
+
+.container-imobiliaria {
+    align-items: center;
+    display: flex;
+    max-width: 90%;
+    position: relative;
+}
+
+.texto-apresentacao {
+    display:flex;
+    margin-left: 10%;
+    max-width: 40%;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+}
+
+.container-imobiliaria img {
+    margin-top: 30px;
+    max-width: 50%;
+    margin-left: 30px;
+    border-radius: 3px;
+    border: 2px solid black;
+    margin-bottom: 10%;
+    display: block;
+
+}
+
+.texto-oportunidades{
+    margin-left: 5%;
+}
+
+.oportunidades ul {
+    text-decoration: none;
+    display: grid;
+    grid-template-columns:  repeat(3, 30%);
+    margin: 3%;
+    max-width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+} 
+
+.oportunidades li {
+    list-style: none;
+    
+}
+
+    .oportunidades a {
+    color: #fff ;
+    text-decoration: none;
+    padding-bottom: 2%;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+.container-conteudo {
+    justify-content: space-between;
+    display: flex;
+    background-color: #05446e;
+}
+
+.container-conteudo h2 {
+    background-color: #fff;
+    border: #333 4px solid;
+    justify-content: space-around;
+    display: flex;
+}
+
+.oportunidades img {
+    max-width: 400px;
+}
+
+.oportunidades button {
+    background-color: #ffffff;
+    color:#05446e;
+    text-transform: uppercase;
+    text-decoration: solid;
+    padding: 8px 10px;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color:#c0c0c0 ;
+    color:#05446e;
+    border: 1px solid rgba(41, 41, 41, 0.808) ;
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+.container-conteudo {
+    max-width: max-content;
+}
+
+.oportunidades li {
+    margin-right: 0%;
+}
+
+.container-titulo h1 {
+    max-width: 60%;
+    font-size: 20pt;
+}
+
+.container-subtitulo li {
+    display: flex;
+    font-size: 12pt;
+}
+
+.container-imobiliaria {
+    flex-direction: column;
+}
+
+.texto-apresentacao {
+    margin-left: 5%; 
+    max-width: 100%;
+    
+}
+
+.container-imobiliaria img {
+    margin-top: 5%; 
+    min-width: 300px;
+}
+
+.oportunidades ul {
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    max-width: max-content;
+    box-sizing: border-box;
+    
+}
+
+.oportunidades img {
+    max-width: 100%;
+}
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+    .oportunidades ul  {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        max-width: 100%;
+    }
+
+    .oportunidades img {
+        max-width: 300px;
+    }
+
+}
